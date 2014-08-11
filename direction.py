@@ -5,11 +5,18 @@ def getDirection(origin, destination):
   payload = {'origin': origin, 'destination': destination}
   response = requests.get("http://maps.googleapis.com/maps/api/directions/json", params=payload)
   jsonResponse = response.json()
-  legRoute = jsonResponse.routes[0].legs[0];
-  directionStr = "Distance : " + legRoute.distance.value + "\n"
+  if len(jsonResponse["routes"]) == 0:
+    raise Exception('Invalid input')
+    return
+
+  route = jsonResponse["routes"][0]
+  legRoute = route["legs"][0]
+  directionStr = "From: "+ origin + "\n"
+  directionStr += "To: "+ destination + "\n"
+  directionStr += "Distance: " + str(legRoute["distance"]["text"]) + "\n"
   directionStr += "Direction: \n"
-  steps = legRoute.steps
+  steps = legRoute["steps"]
   for idx, step in enumerate(steps):
-    directionStr += str(idx) + ". " + strip_tags(step.html_instructions) + "\n"
+    directionStr += str(idx + 1) + ". " + strip_tags(step["html_instructions"]) + "\n"
 
   return directionStr

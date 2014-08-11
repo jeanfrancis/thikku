@@ -3,9 +3,6 @@ from flask import Flask, render_template, request, redirect
 import sms
 import direction
 
-# test mobile number
-TEST_NUMBER = os.getenv('TEST_NUMBER', '')
-
 app = Flask(__name__, static_folder='client', static_url_path='')
 app.config['DEBUG'] = os.environ.get('DEBUG', False)
 
@@ -13,11 +10,15 @@ app.config['DEBUG'] = os.environ.get('DEBUG', False)
 def index():
   return app.send_static_file('index.html')
 
-@app.route('/api/direction', methods=['POST'])
+@app.route('/direction', methods=['POST'])
 def send_sms():
-  origin = request.form.get('origin'),
-  destination.args.get('destination')
-  return direction.getDirection(origin, destination)
+  try:
+    origin = request.form.get('origin'),
+    destination = request.form.get('destination')
+    return direction.getDirection(origin, destination)
+  except Exception as e:
+    print e.message
+    return e.message, 404
 
 @app.route("/receive-sms", methods=['GET'])
 def receive_sms():
@@ -29,7 +30,7 @@ def receive_sms():
 
   response = direction.getDirection(origin, destination)
   sms.send(_from, response)
-  return 'Success!'
+  return 'Direction sent to ' + _from + '!'
 
 if __name__ == '__main__':
   app.run()
