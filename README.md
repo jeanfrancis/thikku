@@ -9,9 +9,9 @@ Check out [thikku](http://thikku.herokuapp.com/)
 
 Following steps are only needed one time
 
-  virtualenv venv
-  source venv/bin/activate
-  pip install -r requirements.txt
+    virtualenv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
 
 ### Export configurations in development
 
