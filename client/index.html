@@ -12,48 +12,101 @@
 </head>
 
 <body>
-    <section class="jumbotron">
-      <div class="medium-container">
-        <h1>Thikku</h1>
-        <div class="row">
-          <p class="lead">
+  <section class="container body-section">
 
-          </p>
-        </div>
+    <section class="hero-unit">
+        <h1 class="brand-name">THIKKU</h1>
+        <p class="title">
+          SMS to <strong>+1 415-851-4154</strong> and get the direction instantly
+        </p>
+        <p class="subtitle">
+          No need of 2G, 3G or 100G. One simple sms change the way you travel.
+        </p>
     </section>
 
-    <div class="container">
-      <h2 class="marketing-heading">Test our service</h2>
-      <div class="row marketing">
-        <form class="form-signup" role="form" method="POST" action="/direction">
-          <div class="form-group">
-            <input type="text" name="name" class="form-control"
-              placeholder="origin" required>
+    <section class="how-it-works">
+      <h2 class="sub-heading">How it works?</h2>
+      <div class="row">
+          <div class="col-sm-6">
+              <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
+              </span>
+              <p>Step 1 - <strong>Send a SMS</strong></p>
+              <p class="text-muted">
+                Send a message <strong>origin : destination</strong>
+                to <strong>+1 415-851-4154</strong> where origin is starting place name and
+                destination is reaching place name.
+                <em>You have to separate both origin and destination by colon(:)</em>
+                <br>
+                Eg: <strong>Toronto : Montreal</strong>
+              </p>
           </div>
-          <div class="form-group">
-            <input type="text" name="name" class="form-control"
-              placeholder="destination" required>
+          <div class="col-sm-6">
+              <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-comment fa-stack-1x fa-inverse"></i>
+              </span>
+              <p>Step 2 - <strong>Receive a SMS</strong></p>
+              <p class="text-muted">
+                  As soon as we receive a SMS. We will send you the direction
+                  information to same mobile number from which you sent a sms.
+              </p>
           </div>
-          <!-- <div class="form-group">
-            <input type="text" name="mobile" class="form-control"
-              placeholder="Mobile">
-          </div> -->
-          <button class="btn btn-success" type="submit">Get Direction</button>
-        </form>
-
       </div>
-    </div>
+    </section>
+
+    <section class="try-it-here">
+      <h2 class="sub-heading">Try it out here</h2>
+      <p id="result" class="text-danger"></p>
+      <form class="form-direction" role="form" method="POST" action="/direction">
+        <div class="form-group">
+          <textarea id="message" rows="8" name="name" class="form-control"
+            placeholder="origin : destination"  required></textarea>
+        </div>
+        <button class="btn btn-success" id="submit" type="submit"><i class="fa fa-paper-plane"></i> Get Direction</button>
+        <button class="btn btn-default" id="clear">Clear</button>
+      </form>
+    </section>
+
+    <section class="benefits">
+      <h2 class="sub-heading">Benefits</h2>
+      <div class="row">
+          <div class="col-sm-4">
+              <h4>Simplicity</h4>
+              <p>You don't need to know hi tech technology to use the service.
+                Our ninjas only need to know how to send a SMS. Thats it.</p>
+          </div>
+          <div class="col-sm-4">
+              <h4>Anywhere around the world</h4>
+              <p>It works even in remote areas of the country where mobile
+                internet is not available or not stable.</p>
+          </div>
+          <div class="col-sm-4">
+              <h4>No need for smart phone</h4>
+              <p>
+                Our service works in any phone from Nokia 1100 to iPhone 5s.
+                No Apps to install and updates.
+              </p>
+          </div>
+      </div>
+      <p class="lead highlights">
+        More than all, It is Free, forever.
+      </p>
+    </section>
 
     <section id="footer" class="footer">
-        <div class="container text-center">
+        <div class="text-center">
             <p>
-                <span>Built with <i class="fa fa-heart love"></i> in Chennai</span>
+                Built by <a href="https://www.twitter.com/fizerkhan" target="_blank">
+                  <i class="fa fa-twitter"></i>fizerkhan</a> with
+                  <i class="fa fa-heart love"></i> in Chennai
             </p>
-            <p><span class="copyrights">copyright © 2013 Chennai Nerd</span></p>
         </div>
     </section>
+  </section>
 
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="scripts/main.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>

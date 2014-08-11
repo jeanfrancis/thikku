@@ -13,9 +13,19 @@ def index():
 @app.route('/direction', methods=['POST'])
 def send_sms():
   try:
-    origin = request.form.get('origin'),
-    destination = request.form.get('destination')
+
+    text = request.form.get('message')
+    print text
+    if text is not None:
+      origin,destination = text.split(":")
+    else:
+      origin = request.form.get('origin'),
+      destination = request.form.get('destination')
+
+    if origin == None or destination == None:
+      return 'Message does not satify the schema', 404
     return direction.getDirection(origin, destination)
+
   except Exception as e:
     print e.message
     return e.message, 404

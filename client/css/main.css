@@ -1,0 +1,104 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #333;
+    background-color: #F5F6F7;
+    background: -webkit-linear-gradient(top,#FFF 0,#F5F6F7 2000px);
+    background: -moz-linear-gradient(top,#fff 0,#f5f6f7 2000px);
+    background: -o-linear-gradient(top,#fff 0,#f5f6f7 2000px);
+    background: -ms-linear-gradient(top,#fff 0,#f5f6f7 2000px);
+    background: linear-gradient(to bottom,#FFF 0,#F5F6F7 2000px);
+
+    /*background: url(/img/direction.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+    webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+.body-section {
+  max-width: 810px;
+  margin-top: 30px;
+  padding: 0;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  background-color: #fff;
+  -moz-box-shadow:    0 0 8px rgba(0,0,0,.24);
+  -webkit-box-shadow: 0 0 8px rgba(0,0,0,.24);
+  box-shadow:         0 0 8px rgba(0,0,0,.24);
+}
+
+.hero-unit {
+  padding: 20px 15px 40px;
+  text-align: center;
+  background-color: #34495e;
+  color: #fff;
+}
+
+.brand-name {
+  font-size: 50px;
+  margin-bottom: 25px;
+  color: #2ecc71;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.title strong {
+  padding: 5px;
+  color: #fff;
+  background-color: #f1c40f;
+}
+
+.sub-title {
+  font-size: 16px;
+}
+
+.sub-heading {
+  font-size: 26px;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.how-it-works,
+.try-it-here,
+.benefits,
+.footer {
+  padding: 30px 20px;
+  border-top: 1px solid #ebebeb;
+}
+
+.how-it-works .fa-stack {
+  display: block;
+  font-size: 5em;
+  color: #e67e22;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.how-it-works p {
+  text-align: center;
+  font-size: 16px;
+}
+
+.try-it-here {
+  max-width: 410px;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #ecf0f1;
+  color: #333;
+}
+
+.highlights {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.fa-heart {
+  color: #ff4e50;
+}
