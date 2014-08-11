@@ -1,27 +1,17 @@
 # Thikku
 
-Get direction through SMS. Works anywhere around the world.
+Get direction through SMS. It works even in remote areas of the country
+where mobile internet is not available or not stable.
+
+Check out [thikku](http://thikku.herokuapp.com/)
 
 ### Install dependencies
 
 Following steps are only needed one time
 
-  1. npm install
-  2. bower install
-  3. virtualenv venv
-  4. source venv/bin/activate
-  5. pip install -r requirements.txt
-
-
-### Run gulp to watch and compile Sass
-
-To compile a sass
-
-    gulp
-
-To compile and watch for sass file changes
-
-    gulp watch
+  virtualenv venv
+  source venv/bin/activate
+  pip install -r requirements.txt
 
 ### Export configurations in development
 
@@ -32,6 +22,4 @@ To compile and watch for sass file changes
 ### Run server
 
     source venv/bin/activate
-    export PYTHONPATH=$(pwd)/server/
-    mongod
     foreman start
