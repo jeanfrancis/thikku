@@ -1,6 +1,6 @@
 # Thikku
 
-Get direction through SMS. Work anywhere around the world.
+Get direction through SMS. Works anywhere around the world.
 
 ### Install dependencies
 
