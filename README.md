@@ -15,9 +15,9 @@ Following steps are only needed one time
 
 ### Export configurations in development
 
-    export PLIVO_AUTH_ID=<copy_from_pilvo>
-    export PLIVO_AUTH_TOKEN=<copy_from_pilvo>
-    export PLIVO_NUMBER=<copy_from_pilvo>
+    export PLIVO_AUTH_ID=<copy_from_plivo>
+    export PLIVO_AUTH_TOKEN=<copy_from_plivo>
+    export PLIVO_NUMBER=<copy_from_plivo>
 
 ### Run server
 

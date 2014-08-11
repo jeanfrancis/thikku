@@ -1,7 +1,7 @@
 import os
 import plivo
 
-## Get pilvo configuration
+## Get plivo configuration
 PLIVO_AUTH_ID = os.getenv('PLIVO_AUTH_ID', '')
 PLIVO_AUTH_TOKEN = os.getenv('PLIVO_AUTH_TOKEN', '')
 PLIVO_NUMBER = os.getenv('PLIVO_NUMBER', '')
