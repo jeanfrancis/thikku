@@ -13,9 +13,7 @@ def index():
 @app.route('/direction', methods=['POST'])
 def send_sms():
   try:
-
     text = request.form.get('message')
-    print text
     if text is not None:
       origin,destination = text.split(":")
     else:

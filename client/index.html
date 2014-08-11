@@ -59,13 +59,14 @@
     <section class="try-it-here">
       <h2 class="sub-heading">Try it out here</h2>
       <p id="result" class="text-danger"></p>
-      <form class="form-direction" role="form" method="POST" action="/direction">
+      <form id="form-direction" class="form-direction" role="form" method="POST" action="/direction">
         <div class="form-group">
-          <textarea id="message" rows="8" name="name" class="form-control"
+          <textarea id="message" rows="8" name="message" class="form-control"
             placeholder="origin : destination"  required></textarea>
         </div>
-        <button class="btn btn-success" id="submit" type="submit"><i class="fa fa-paper-plane"></i> Get Direction</button>
-        <button class="btn btn-default" id="clear">Clear</button>
+        <button class="btn btn-success" id="submit" type="submit">
+          <i class="fa fa-paper-plane"></i> Get Direction</button>
+        <a class="btn btn-default" id="clear" href="">Clear</a>
       </form>
     </section>
 

@@ -1,10 +1,18 @@
 $(document).ready(function() {
   var $result = $('#result');
+  var $message = $('#message');
   var $submitBtn = $('#submit');
+
+  $('#clear').click(function(e) {
+    e.preventDefault();
+    $result.html('');
+    $message.val('');
+  });
+
   $('#form-direction').submit(function() {
       $result.html('');
 
-      var message = $('#message').val();
+      var message = $message.val();
       if (!message) {
         $result.html('Message cannot be empty.');
         return false;
@@ -12,7 +20,7 @@ $(document).ready(function() {
 
       var array = message.split(':');
       if (array.length !== 2 || !array[0] || !array[1]) {
-        $result.html('Message must be in the format of Origin:destination');
+        $result.html('Message must be in the format of Origin:Destination');
         return false;
       }
 
@@ -21,21 +29,18 @@ $(document).ready(function() {
       $.ajax({
           url: action,
           type: 'POST',
-          data: JSON.stringify({
-              message: message,
-          }),
-          // dataType: 'json',
-          // contentType: 'application/json;charset=utf-8',
+          data: 'message=' + message,
           success: function(data){
-            console.log(data);
+            $submitBtn.removeAttr('disabled');
             $result.html('');
+            $message.val(data);
           },
           error: function(data) {
-            console.log(data);
             $submitBtn.removeAttr('disabled');
-            $result.html('Sorry, an error occurred. ' + data.response);
+            $result.html('Sorry, an error occurred. ' + data.responseText);
           }
       });
       return false;
   });
+
 });

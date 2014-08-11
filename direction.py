@@ -6,7 +6,7 @@ def getDirection(origin, destination):
   response = requests.get("http://maps.googleapis.com/maps/api/directions/json", params=payload)
   jsonResponse = response.json()
   if len(jsonResponse["routes"]) == 0:
-    raise Exception('Invalid input')
+    raise Exception('Unable to fetch from Google map!')
     return
 
   route = jsonResponse["routes"][0]
