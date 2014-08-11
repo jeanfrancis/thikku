@@ -1,13 +1,7 @@
 body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #333;
-    background-color: #F5F6F7;
-    background: -webkit-linear-gradient(top,#FFF 0,#F5F6F7 2000px);
-    background: -moz-linear-gradient(top,#fff 0,#f5f6f7 2000px);
-    background: -o-linear-gradient(top,#fff 0,#f5f6f7 2000px);
-    background: -ms-linear-gradient(top,#fff 0,#f5f6f7 2000px);
-    background: linear-gradient(to bottom,#FFF 0,#F5F6F7 2000px);
-
+    background-color: #fafafa;
     /*background: url(/img/direction.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -37,7 +31,7 @@ body {
 
 .brand-name {
   font-size: 50px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   color: #2ecc71;
 }
 
