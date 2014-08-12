@@ -23,3 +23,8 @@ Following steps are only needed one time
 
     source venv/bin/activate
     foreman start
+
+### Kudos
+
+Logo uses font Happy Monk. Thanks to the creator of this font.
+Thanks to The Noun Project for logo icon.
