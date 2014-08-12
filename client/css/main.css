@@ -30,7 +30,6 @@ body {
 
 .brand-name {
   font-size: 50px;
-  margin-bottom: 35px;
   color: #fff;
   text-shadow: 1px 1px 2px #6189a4;
 }
@@ -78,6 +77,17 @@ body {
   font-size: 16px;
 }
 
+.number {
+  display: inline-block;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  background: #999;
+  color: #fff;
+  border: 1px solid #888;
+}
+
 .try-it-here {
   max-width: 410px;
   margin: 0 auto;
@@ -86,7 +96,7 @@ body {
 .footer {
   /*background-color: #ecf0f1;
   color: #333;*/
-  background-color: #6189a4;
+  background-color: #111;
   color: #fff;
 }
 
@@ -107,9 +117,26 @@ body {
   font-size: 80px;
 }
 
-.benefits h4 {
-  color: #e74c3c;
+.benefits .sub-heading {
+  margin-bottom: 40px;
 }
+
+.benefits h4 {
+  color: #666;
+}
+
+.benefits .fa-smile-o {
+  color: #f39c12;
+}
+
+.benefits .fa-globe {
+  color: #2980b9;
+}
+
+.benefits .fa-mobile {
+  color: #8e44ad;
+}
+
 
 .highlights {
   margin-top: 20px;
