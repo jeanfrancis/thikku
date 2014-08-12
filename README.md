@@ -1,9 +1,13 @@
 # Thikku
 
 Get direction through SMS. It works even in remote areas of the country
-where mobile internet is not available or not stable.
+where mobile Internet is not available or not stable.
 
 Check out [thikku](http://thikku.herokuapp.com/)
+
+### Why Thikku?
+
+Thikku(திக்கு) is the word derived from **[Tamil(தமிழ்) Language](http://en.wikipedia.org/wiki/Tamil_language)**. The meaning of a word Thikku(திக்கு) is **direction**.
 
 ### Install dependencies
 
@@ -26,5 +30,5 @@ Following steps are only needed one time
 
 ### Kudos
 
-Logo uses font Happy Monk. Thanks to the creator of this font.
-Thanks to The Noun Project for logo icon.
+Logo uses **[Happy Monk](https://www.google.com/fonts/specimen/Happy+Monkey)** font. Thanks to the creator **Brenda Gallo** and **Gustavo Dipre**.
+Thanks to **The Noun Project** for logo icon.
