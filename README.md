@@ -7,7 +7,7 @@ Check out [thikku](http://thikku.herokuapp.com/)
 
 ### Why Thikku?
 
-Thikku(திக்கு) is the word derived from **[Tamil(தமிழ்) Language](http://en.wikipedia.org/wiki/Tamil_language)**. The meaning of a word Thikku(திக்கு) is **direction**.
+Thikku(திக்கு) is the word derived from **[Tamil(தமிழ்) Language](http://en.wikipedia.org/wiki/Tamil_language)** and meaning of a word Thikku(திக்கு) is **direction**.
 
 ### Install dependencies
 
