@@ -117,11 +117,22 @@ body {
   color: #333;*/
   background-color: #111;
   color: #fff;
+  font-size: 16px;
 }
 
 .footer a {
-  color: #11c5ff;
+  color: #dbfb8d;
 }
+
+.social-twitter {
+  color: #00acee !important;
+}
+
+.fa-heart {
+  color: #f27490;
+  font-size: 22px;
+}
+
 
 .benefits {
   background: -moz-radial-gradient(#fff, #f1f8f9) #f1f8f9;
@@ -161,8 +172,4 @@ body {
   margin-top: 20px;
   text-align: center;
   font-size: 22px;
-}
-
-.fa-heart {
-  color: #ff4e50;
 }
