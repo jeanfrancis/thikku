@@ -32,3 +32,9 @@ Following steps are only needed one time
 
 Logo uses **[Happy Monk](https://www.google.com/fonts/specimen/Happy+Monkey)** font. Thanks to the creator **Brenda Gallo** and **Gustavo Dipre**.
 Thanks to **The Noun Project** for logo icon.
+
+### Feedbacks and Suggestions
+
+If you have any feedbacks or suggestions, create an issue in Github or
+tweet me [@fizerkhan](https://www.twitter.com/fizerkhan)
+
